@@ -7,12 +7,11 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
 import { BiMenu, BiX } from "react-icons/bi";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuOpen = () => {
-    setIsOpen(prev => !prev);
+    setIsOpen((prev) => !prev);
   };
 
   return (
@@ -66,17 +65,17 @@ const Navbar = () => {
         </ul>
 
         <ul className="hidden md:flex gap-5">
-         
-
           <li
             className="cursor-pointer text-2xl
             opacity-70 transition-all duration-300 hover:text-blue-300
             hover:opacity-100 hover:scale-105"
           >
-            <a href="https://www.linkedin.com/in/nikhil-yadav-225107b7/" target="_blank">
-            <RiLinkedinBoxFill />
+            <a
+              href="https://www.linkedin.com/in/nikhil-yadav-225107b7/"
+              target="_blank"
+            >
+              <RiLinkedinBoxFill />
             </a>
-
           </li>
 
           <li
@@ -84,20 +83,21 @@ const Navbar = () => {
             opacity-70 transition-all duration-300 hover:text-brown-500
             hover:opacity-100 hover:scale-105"
           >
-            <a href="https://github.com/nky159"
-             target="blank"> <FaGithubSquare /></a>
-           
+            <a href="https://github.com/nky159" target="blank">
+              {" "}
+              <FaGithubSquare />
+            </a>
           </li>
 
           <li
-          
             className="cursor-pointer text-2xl
             opacity-70 transition-all duration-300 hover:text-red-500
             hover:opacity-100 hover:scale-105"
           >
-            <a href="mailto:cse.nikhil159@gmail.com"> <BiLogoGmail /></a>
-           
-
+            <a href="mailto:cse.nikhil159@gmail.com">
+              {" "}
+              <BiLogoGmail />
+            </a>
           </li>
 
           <li
@@ -105,18 +105,17 @@ const Navbar = () => {
             opacity-70 transition-all duration-300 hover:text-orange-300
             hover:opacity-100 hover:scale-110"
           >
-            <FaFileAlt />
+            <a href="/resume.pdf" download>
+              <FaFileAlt />
+            </a>
           </li>
         </ul>
-
 
         {isOpen ? (
           <BiX className="block md:hidden text-4xl" onClick={menuOpen} />
         ) : (
           <BiMenu className="block md:hidden text-4xl" onClick={menuOpen} />
         )}
-
-
 
         {isOpen && (
           <div
@@ -125,8 +124,6 @@ const Navbar = () => {
         border-1 border-gray-800 bg-black/90 p-12
         ${isOpen ? "block" : "hidden"}`}
           >
-
-
             <ul className="flex flex-col gap-8">
               <a
                 href="#home"
@@ -161,7 +158,6 @@ const Navbar = () => {
               </a>
             </ul>
 
-
             <ul className="flex flex-wrap gap-5">
               <li
                 className="cursor-pointer text-xl
@@ -195,11 +191,8 @@ hover:opacity-100"
                 <FaFileAlt />
               </li>
             </ul>
-
-
           </div>
         )}
-
       </nav>
     </>
   );
