@@ -10,11 +10,11 @@ import live from "/public/live.png";
 const projectData = [
   {
     image: image1,
-    title: "Habit Tracker",
+    title: "Burger App ",
     description:
-      "lorem100dkjasdnkajdnkjandkjandjknd jdkjasdjasdjkadkjadkjandak jndkjasdjadkjadkjadkja dhashdkjashdkjadk",
-    technologies: ["HTML", "CSS", "JavaScript", "TailwindCss"],
-    liveLink: "https://invoice-generator-react.netlifydd.app/",
+      "A responsive and dynamic burger ordering web app built with React.js and few Modern Libraries, focusing on user experience, real-time interaction, and modern UI design. ",
+    technologies: ["ReactJs", "SwipperJs", "FramerMotion", "TailwindCss"],
+    liveLink: "https://bigbarburger.netlify.app/",
 
   },
   {
