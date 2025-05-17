@@ -4,10 +4,19 @@ import image2 from "/public/2.png";
 import image3 from "/public/3.png";
 import image4 from "/public/4.png";
 import image5 from "/public/5.png";
+import image6 from "/public/6.png";
 import { motion } from "motion/react";
 import live from "/public/live.png";
 
 const projectData = [
+  {
+    image: image6,
+    title: "E-Commerce",
+    description:"Built a full-stack online E-Commerce website using React.js with features like user authentication, real-time product listings, cart system, and an admin dashboard for managing Product items.",
+    technologies: ["ReactJS", "Tailwind", "Firebase", "Redux"],
+    liveLink: "https://e-commerce-red-zeta-97.vercel.app/",
+
+  },
   {
     image: image1,
     title: "Burger App ",
@@ -15,15 +24,6 @@ const projectData = [
       "A responsive and dynamic burger ordering web app built with React.js and few Modern Libraries, focusing on user experience, real-time interaction, and modern UI design. ",
     technologies: ["ReactJs", "SwipperJs", "FramerMotion", "TailwindCss"],
     liveLink: "https://bigbarburger.netlify.app/",
-
-  },
-  {
-    image: image2,
-    title: "Resturant ",
-    description:
-      "lorem100dkjasdnkajdnkjandkjandjknd jdkjasdjasdjkadkjadkjandak jndkjasdjadkjadkjadkja dhashdkjashdkjadk",
-    technologies: ["HTML", "CSS", "JavaScript", "TailwindCss"],
-    liveLink: "https://invoice-generator-react.netlify.apssp/",
 
   },
   {
@@ -51,7 +51,7 @@ const projectData = [
     technologies: ["HTML", "CSS", "JavaScript", "TailwindCss"],
     liveLink: "https://invoice-generatddor-react.netlify.app/",
 
-  },
+  }
 ];
 
 const ScrollReveal = ({ children }) => {
